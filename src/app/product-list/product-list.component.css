@@ -1,3 +1,6 @@
+.bodybackground{
+  background-color: lightgray;
+}
 button:hover{
     background-color: yellow;
 }
@@ -62,3 +65,48 @@ button:hover{
     color: white;
     transform: rotateY(180deg);
   } */
+.closeButton{
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 8px;
+  margin: 5px 5px;
+  cursor: pointer;
+}
+.closebuttonborder{
+  border-radius: 50%;
+}
+.maxminButton{
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 8px;
+  margin: 5px 5px;
+  cursor: pointer;
+}
+.maxminbuttonborder{
+  border-radius: 50%;
+}
+.mizeButton{
+  background-color: rgb(12, 219, 12);
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 8px;
+  margin: 5px 5px;
+  cursor: pointer;
+}
+.mizebuttonborder{
+  border-radius: 50%;
+} 

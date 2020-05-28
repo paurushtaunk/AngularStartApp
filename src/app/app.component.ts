@@ -11,10 +11,13 @@ import { Component } from '@angular/core';
   <footer>
     <app-footer-copyrights [applicationType]="applicationType"></app-footer-copyrights>
   </footer>
+  <router-outlet></router-outlet>
   `,
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'AngularStartApp';
   public applicationType:string = "Sample POC app";
 }
+

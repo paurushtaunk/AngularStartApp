@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';  
 
 @Component({
   selector: 'app-product-list',
@@ -9,7 +10,7 @@ export class ProductListComponent implements OnInit {
   pageTitle = 'Product List';
   pageNumber:number = 1;
 
-  constructor() {  };
+  constructor(private router : Router) { }  
 
   getPageNumbers(pageNumber = 1): number{
     this.pageNumber = pageNumber + 1
@@ -17,6 +18,7 @@ export class ProductListComponent implements OnInit {
   };
   
   ngOnInit() {
+    // this.router.navigate(['/Dashboard']); 
   }
 
 }

@@ -6,7 +6,12 @@ import { AppComponent } from './app.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { FooterCopyrightsComponent } from './footer-copyrights/footer-copyrights.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes, Router } from '@angular/router';
+
+const routes: Routes = [
+  { path: 'db', component: DashboardComponent }
+  
+];
 
 @NgModule({
   declarations: [
@@ -18,11 +23,18 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot([
-    // { path: 'dashboard/:dashboard', component: DashboardComponent }
-    ])
+    [RouterModule.forRoot(routes)],
+  
   ],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(private router : Router) { }  
+  
+  ngOnInit() {
+    this.router.navigate(['/Dashboard']); 
+  }
+}
+
