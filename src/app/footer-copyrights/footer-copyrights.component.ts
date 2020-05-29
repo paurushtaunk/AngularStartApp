@@ -8,7 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class FooterCopyrightsComponent implements OnInit {
 
   constructor() { }
-  @Input() applicationType:string;
+  public applicationType:string = "Sample POC app";
+  
   ngOnInit() {
   }
 

@@ -7,9 +7,13 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { FooterCopyrightsComponent } from './footer-copyrights/footer-copyrights.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RouterModule, Routes, Router } from '@angular/router';
+import { StartAppRoutingComponent } from './start-app-routing/start-app-routing.component';
 
 const routes: Routes = [
-  { path: 'db', component: DashboardComponent }
+  { path: 'db', component: DashboardComponent },
+  { path: 'ProdList' , component: ProductListComponent},
+  // { path: 'foo' , component: FooterCopyrightsComponent},
+  { path: 'Homescreen' , component: StartAppRoutingComponent}
   
 ];
 
@@ -18,7 +22,8 @@ const routes: Routes = [
     AppComponent,
     ProductListComponent,
     FooterCopyrightsComponent,
-    DashboardComponent
+    DashboardComponent,
+    StartAppRoutingComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +39,7 @@ export class AppModule {
   constructor(private router : Router) { }  
   
   ngOnInit() {
-    this.router.navigate(['/Dashboard']); 
+    this.router.navigate(['/Homescreen']); 
   }
 }
 
