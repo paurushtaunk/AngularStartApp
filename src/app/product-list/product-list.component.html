@@ -1,25 +1,28 @@
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-<link rel="./product-list.component.css"/>
+<link rel="stylesheet" type="text/css"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="./product-list.component.css" />
 <!-- <div class="ad-banner-example">Hello</div> -->
-<div class="card bg-secondary">
-    <button class="ButtonNone" data-qe-id="GotoHomescreen" routerLink="/Homescreen">
-        Goto Home screen
-    </button>
+<div class="bg-secondary">
+    <div class="btn btn-group bg-success">
+        <button class="MasterButton" data-qe-id="GotoHomescreen" id="ProdListMasterButton" routerLink="/Homescreen">
+            Goto Home screen
+        </button>
+    </div>
 </div>
 
 <div class='card bg-secondary'>
     <div class="btn-group">
-        <button class="closeButton closebuttonborder" data-qe-id="closeButton" data-toggle="tooltip" data-html="true" title="Close"></button>
-        <button class="maxminButton maxminbuttonborder" data-qe-id="maxminButton" title="Maximize / Minimize"></button>
-        <button class="mizeButton mizebuttonborder" data-qe-id="mizeButton"></button>
+        <button class="closeButton closebuttonborder" data-qe-id="closeButton" title="Close" (click)="CloseProdList($event)"></button>
+        <button class="maxminButton maxminbuttonborder" data-qe-id="maxminButton" title="Restore Down"></button>
+        <button class="mizeButton mizebuttonborder" data-qe-id="mizeButton" title="Minimize"></button>
     </div>
 </div>
-    <div class='card bodybackground'>
+<div class='card bodybackground'>
     <thead class='btn-dark' align='center'>
-    <div class='card-header glow' id="PageTitle">
-        {{pageTitle}}
-    </div>
-    <!--Flip Card with an image's
+        <div class='card-header glow' id="PageTitle">
+            {{pageTitle}}
+        </div>
+        <!--Flip Card with an image's
         <div align="right">
     <div class="flip-card">
         <div class="flip-card-inner">
@@ -37,7 +40,7 @@
         <div class='row'>
             <div class='col-md-2'>Filter by:
                 <div class='col-md-0'>
-                    <input type='text' id="filterbyinput"/>
+                    <input type='text' id="filterbyinput" />
                 </div>
             </div>
         </div>

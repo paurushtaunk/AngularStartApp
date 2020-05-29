@@ -18,7 +18,11 @@ export class ProductListComponent implements OnInit {
   };
   
   ngOnInit() {
-    // this.router.navigate(['/Dashboard']); 
+  }
+
+  CloseProdList(event)
+  {
+    this.router.navigate(['/db']); 
   }
 
 }

@@ -36,10 +36,10 @@ const routes: Routes = [
   bootstrap: [AppComponent]
 })
 export class AppModule { 
-  constructor(private router : Router) { }  
+  // constructor(private router : Router) { }  
   
-  ngOnInit() {
-    this.router.navigate(['/Homescreen']); 
-  }
+  // ngOnInit() {
+  //   this.router.navigate(['/Homescreen']);
+  // }
 }
 

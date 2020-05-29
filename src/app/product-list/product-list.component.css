@@ -1,7 +1,10 @@
 .bodybackground{
   background-color: lightgray;
 }
-
+.MasterButton{
+  height:33px;
+  width: 135px;        
+}
 .glow {
     font-size: 30px;
     color: #fff;
