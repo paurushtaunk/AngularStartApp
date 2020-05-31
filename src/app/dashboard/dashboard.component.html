@@ -1,5 +1,39 @@
 <div class="btn btn-group bg-success">
-  <button routerLink="/Home" id="DBMasterButton"> 
+  <button routerLink="/Home" id="DBMasterButton">
     Goto Home screen
   </button>
+</div>
+<div class="OverflowNone">
+  <div class="row Borderbox" data-qe-id="BoxContent">
+    <!--User Related Entry Form-->
+    <div class="column">
+      <form align="center">
+        <b>Name : </b> <input type="text" id="Name" /><br><br>
+
+        <b>Email Id : </b> <input type="text" id="EmailId" /><br><br>
+
+        <b>Gender : </b> <input type="text" id="Gender" /><br><br>
+
+        <b>Phone no : </b> <input type="phone" id="Phone" /><br><br>
+      </form>
+      <button class="btn btn-primary" (click)="Update('details')">Update</button>
+
+    </div>
+    <!--User Entered Details-->
+    <div class="column text-wrap" id="DataBox">
+      <h3 class="text-primary"><u>Profile Details-</u></h3>
+      <div>
+        <b>Name :</b>{{Name}}
+      </div>
+      <div>
+        <b>Email Id :</b>{{EmailId}}
+      </div>
+      <div>
+        <b>Gender :</b>{{Gender}}
+      </div>
+      <div>
+        <b>Phone no :</b>{{Phone}}
+      </div>
+    </div>
+  </div>
 </div>

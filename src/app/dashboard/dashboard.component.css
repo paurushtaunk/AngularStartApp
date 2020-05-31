@@ -1,0 +1,23 @@
+
+  /* Create two equal columns that floats next to each other */
+.column {
+    float: initial;
+    width: 40%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#DataBox {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+}
+.OverflowNone{
+    overflow: unset;
+}
