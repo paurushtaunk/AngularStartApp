@@ -6,7 +6,10 @@
     <div class="btn btn-group bg-success">
         <button class="MasterButton" data-qe-id="GotoHomescreen" id="ProdListHomeButton" routerLink="/Home"
             *ngIf="currDiv == 'ProdList'">
-            Goto Home screen
+            Logout
+        </button>
+        <button routerLink="/db">
+            Goto Dashboard
         </button>
         <button class="MasterButton" data-qe-id="ShowProdList" id="ShowProdListButton" *ngIf="currDiv == 'ShowProdList'"
             (click)="ShowProdL('ProdList')">
