@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'db', component: DashboardComponent },
   { path: 'ProdList' , component: ProductListComponent},
   // { path: 'foo' , component: FooterCopyrightsComponent},
-  { path: 'Homescreen' , component: StartAppRoutingComponent}
+  { path: 'Home' , component: StartAppRoutingComponent}
   
 ];
 

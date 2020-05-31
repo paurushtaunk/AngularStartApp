@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StartAppRoutingComponent implements OnInit {
 
+  LoginStatus: string = "NotLoggedin"; 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
+  Login(Status: string){
+    this.LoginStatus = "Loggedin";
+  }
 }

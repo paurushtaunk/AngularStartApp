@@ -1,8 +1,14 @@
-<div class="btn btn-group bg-success" id="StartAppMasterbuttons"> 
-    <button routerLink="/db">
-        Goto Dashboard
-    </button>
-    <button routerLink="/ProdList">
-        Goto Product list component
-    </button>
+
+<!-- This Block should be enbled only if logged in -->
+<!-- *ngIf="LoginStatus == Loggedin" -->
+<button (click)="Login('Loggedin')">Log in Button</button>
+<div *ngIf="LoginStatus == 'Loggedin'">
+    <div class="btn btn-group bg-success" id="StartAppMasterbuttons">
+        <button routerLink="/db">
+            Goto Dashboard
+        </button>
+        <button routerLink="/ProdList">
+            Goto Product list component
+        </button>
+    </div>
 </div>
