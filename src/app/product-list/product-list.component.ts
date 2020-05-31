@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class ProductListComponent implements OnInit {
   pageTitle = 'Product List';
   pageNumber:number = 1;
+  currDiv: string = 'ProdList';
 
   constructor(private router : Router) { }  
 
@@ -20,9 +21,18 @@ export class ProductListComponent implements OnInit {
   ngOnInit() {
   }
 
+  //Close Prod List
   CloseProdList(event)
   {
     this.router.navigate(['/db']); 
+  }
+  //Minimize the Product List
+  ShowDiv(divVal: string) {
+    this.currDiv = divVal;
+    this.currDiv = 'ShowProdList';
+  }
+  ShowProdL(divVal: string){
+    this.currDiv = 'ProdList';
   }
 
 }
