@@ -11,31 +11,31 @@
     <!--User Related Entry Form-->
     <div class="column">
       <form align="center">
-        <b>Name : </b> <input type="text" id="Name" /><br><br>
+        <b>Name : </b> <input #Name type="text" id="Name"/><br><br>
 
-        <b>Email Id : </b> <input type="text" id="EmailId" /><br><br>
+        <b>Email Id : </b> <input #EmailId type="text" id="EmailId" /><br><br>
 
-        <b>Gender : </b> <input type="text" id="Gender" /><br><br>
+        <b>Gender : </b> <input #Gender type="text" id="Gender" /><br><br>
 
-        <b>Phone no : </b> <input type="phone" id="Phone" /><br><br>
+        <b>Phone no : </b> <input #Phone type="phone" id="Phone" /><br><br>
       </form>
-      <button class="btn btn-primary" (click)="Update('details')">Update</button>
+      <button class="btn btn-primary" (click)="Update('details')" (keyup)="0">Update</button>
 
     </div>
     <!--User Entered Details-->
     <div class="column text-wrap" id="DataBox">
       <h3 class="text-primary"><u>Profile Details-</u></h3>
       <div>
-        <b>Name :</b>{{Name}}
+        <b>Name :</b>  {{Name.value}}
       </div>
       <div>
-        <b>Email Id :</b>{{EmailId}}
+        <b>Email Id :</b>  {{EmailId.value}}
       </div>
       <div>
-        <b>Gender :</b>{{Gender}}
+        <b>Gender :</b>  {{Gender.value}}
       </div>
       <div>
-        <b>Phone no :</b>{{Phone}}
+        <b>Phone no :</b> {{Phone.value}}
       </div>
     </div>
   </div>
